@@ -1,0 +1,164 @@
+body
+{
+    overflow-x: hidden;
+    margin: 0;
+}
+
+a
+{
+    text-decoration: none;
+    color: black;
+}
+
+.container
+{
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    overflow-y: hidden;
+    overflow-x: hidden;
+    display: grid;
+    height: 200vh;
+    width: 100vw;
+    grid-template-columns: auto;
+    grid-template-rows: 15vh 165vh 20vh;
+    grid-template-areas: 
+    'ph' 'ph' 'ph'
+    'mn' 'mn' 'mn'
+    'ft' 'ft' 'ft'
+}
+
+header
+{
+    grid-area: "hd";
+    background-color: white;
+    position: fixed;
+    top: 0;
+    width: 100vw;
+    height: 15vh;
+    display: flex;
+    align-items: center;
+}
+
+.phold
+{
+    grid-area: "ph";
+    background-color: blanchedalmond;
+}
+
+.topbar
+{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100vw;
+}
+
+nav
+{
+    display: flex;
+    margin: 5vw;
+    width: 50vw;
+    justify-content: space-between;
+}
+
+.logo
+{
+    
+    width: 50px;
+    height: 50px;
+    margin-left: 5vw;
+}
+.logo img
+{
+    width: 100px;
+}
+
+.click
+{
+
+    width: 50px;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+main
+{
+    grid-area: "mn";
+    background-color: darkgoldenrod;
+}
+
+footer
+{
+    grid-area: "ft";
+    background-color: rgb(20, 20, 20);
+    transform: skewY(5deg);
+    height: auto;
+    width: 200vw;
+}
+
+.vrid
+{
+    background-color: rgb(20, 20, 20);;
+    height: 100px;
+    transform: skewY(-5deg);
+    height: 20vh;
+}
+
+.kontakt
+{
+    margin: 5vw;
+    width: 15vw;
+    height: 100px;
+}
+.kontakt h5
+{
+    color: aliceblue;
+    margin: 0;
+}
+.kontakt h4
+{
+    color: aliceblue;
+
+}
+
+.kontakt a
+{
+    color: aliceblue;
+}
+
+.koncon
+{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    width: 100vw;
+}
+
+@media screen and (min-width:600px) {
+    footer
+    {
+        transform: skewY(2deg);
+    }
+    .vrid
+    {
+        transform: skewY(-2deg);
+    }
+    .kontakt
+    {
+        transform: scale(1.2);
+    }
+    nav
+    {
+        width: 30vw;
+    }
+    .click
+    {
+        transform: scale(1.5)
+    }
+    .logo img
+    {
+        width: 150px;
+    }
+}
