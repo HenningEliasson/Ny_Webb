@@ -36,12 +36,16 @@ header
     height: 15vh;
     display: flex;
     align-items: center;
+    -moz-box-shadow: 0 4px 4px rgba(0, 0, 0, 0.4);
+    -webkit-box-shadow: 0 4px 4px rgba(0, 0, 0, 0.4);
+    box-shadow: 0 4px 4px rgba(0, 0, 0, 0.4);
+    z-index: 1;
 }
 
 .phold
 {
     grid-area: "ph";
-    background-color: blanchedalmond;
+    background-color: #ffffff;
 }
 
 .topbar
@@ -86,7 +90,41 @@ nav
 main
 {
     grid-area: "mn";
-    background-color: darkgoldenrod;
+    background-color: rgb(255, 255, 255);
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    position: relative;
+    text-align: center;
+}
+
+.mainBild
+{ 
+    height: 155vh;
+    width: 90vw;
+    margin-top: 10vh;
+    object-fit: cover;
+}
+
+.mitt
+{
+    position: absolute;
+    top: 70%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 70vw;
+    height: 70vh;
+    background-color: #ffffff;
+}
+
+.text
+{
+    margin: 2vw
+}
+
+.sides
+{
+    width: 5vw;
 }
 
 footer
@@ -103,7 +141,7 @@ footer
     background-color: rgb(20, 20, 20);;
     height: 100px;
     transform: skewY(-5deg);
-    height: 20vh;
+    height: 30vh;
 }
 
 .kontakt
@@ -160,5 +198,19 @@ footer
     .logo img
     {
         width: 150px;
+    }
+    .container
+    {
+        height: 210vh;
+        grid-template-rows: 15vh 165vh 25vh;
+    }
+}
+
+@media screen and (max-width:600px) 
+{
+    .mainBild
+    {
+        height: 100vh;
+        width: auto;
     }
 }
