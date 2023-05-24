@@ -90,43 +90,32 @@ nav
 main
 {
     grid-area: "mn";
-    background-color: rgb(255, 255, 255);
-    width: 100vw;
-    display: flex;
-    justify-content: center;
-    position: relative;
-    text-align: center;
+    display: grid;
+    grid-template-columns: auto;
+    grid-template-rows: auto;
+    grid-template-areas: 
+    'b1' 't1'
+    't2' 'b2'
 }
 
-.mainBild
-{ 
-    height: 155vh;
-    width: 90vw;
-    margin-top: 10vh;
-    object-fit: cover;
-}
-
-.mitt
+.bild1
 {
-    position: absolute;
-    top: 70%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    width: 70vw;
-    height: 70vh;
-    background-color: #ffffff;
-    box-shadow: 0 4px 4px rgba(0, 0, 0, 0.8);
-    border-radius: 10px;
+    grid-area: "b1";
 }
 
-.text
+.tex1
 {
-    margin: 2vw
+    grid-area: "t1";
 }
 
-.sides
+.tex2
 {
-    width: 5vw;
+    grid-area: "t2";
+}
+
+.bild2
+{
+    grid-area: "b2";
 }
 
 footer
