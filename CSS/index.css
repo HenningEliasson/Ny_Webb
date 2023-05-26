@@ -12,7 +12,7 @@ a
 
 .container
 {
-    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     overflow-y: hidden;
     overflow-x: hidden;
     display: grid;
@@ -23,7 +23,7 @@ a
     grid-template-areas: 
     'ph' 'ph' 'ph'
     'mn' 'mn' 'mn'
-    'ft' 'ft' 'ft'
+    'ft' 'ft' 'ft';
 }
 
 header
